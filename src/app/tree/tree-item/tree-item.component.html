@@ -14,7 +14,12 @@
            <mat-icon
           *ngIf="item.icon"
           >{{item.icon}}</mat-icon>
-          <mat-checkbox [(ngModel)]="item.checked"></mat-checkbox>
+          <mat-checkbox
+            *ngIf="item.selectable"
+            [class.tree-item-row-checkbox]="!(item.children && item.children.length) && item.selectable"
+            [(ngModel)]="item.checked"
+            (ngModelChange)="onCheckbox($event, item)"
+            (click)="$event.stopPropagation()"></mat-checkbox>
           {{item.text}}
         <!-- </button> -->
        
