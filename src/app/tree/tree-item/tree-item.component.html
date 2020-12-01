@@ -1,0 +1,13 @@
+<div class="tree-item" *ngFor="let item of treeList">
+  {{item.text}}
+
+  <div 
+        *ngIf="item.children && item.children.length && item.expanded"
+        [style.marginLeft]="'2.631em'"
+        >
+        <tree-item 
+        [treeList]="item.children" 
+        (itemSelected)="selectedItem($event)">
+        </tree-item>
+    </div>
+</div>

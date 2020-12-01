@@ -1,0 +1,26 @@
+.tree-item {
+    // width: calc(100% - #{em(32)});
+    // margin: 0 em(16);
+    &-row {
+        cursor: pointer;
+        margin: 4px 0;
+        width: 100%;
+        padding: 4px 8px;
+        height: 36px;
+        &-selected {
+            background-color: #f2f4f8;
+            border-radius: 20px;
+        }
+        &-icon {
+            margin: 0 19px 0 3px;
+        }
+        &-checkbox {
+            margin-left: 2.621em;
+        }
+        &-label{
+            font-size: 14px;
+            color: #333333;
+        }
+    }
+    
+}
