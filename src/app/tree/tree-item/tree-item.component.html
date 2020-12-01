@@ -9,7 +9,7 @@
           *ngIf="item.children && item.children.length && item.expanded"
           >keyboard_arrow_down</mat-icon>
           <mat-icon
-          *ngIf="!(item.children && item.children.length && item.expanded)"
+          *ngIf="item.children && item.children.length && !item.expanded"
           >keyboard_arrow_right</mat-icon>
            <mat-icon
           *ngIf="item.icon"
