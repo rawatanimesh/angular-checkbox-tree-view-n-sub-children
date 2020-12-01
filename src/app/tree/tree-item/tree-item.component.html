@@ -11,10 +11,11 @@
           <mat-icon
           *ngIf="!(item.children && item.children.length && item.expanded)"
           >keyboard_arrow_right</mat-icon>
-          {{item.text}}
            <mat-icon
           *ngIf="item.icon"
           >{{item.icon}}</mat-icon>
+          <mat-checkbox [(ngModel)]="item.checked"></mat-checkbox>
+          {{item.text}}
         <!-- </button> -->
        
   </div>

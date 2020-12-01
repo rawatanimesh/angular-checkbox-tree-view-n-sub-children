@@ -8,11 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent  {
 
   treeList = [
-    {text: 'RAN', icon: 'Bell', expanded: true, children: [
-      {text: 'Altiostar', icon: 'Bell', expanded: true, children: [
+    {text: 'RAN', icon: 'calendar_view_day', expanded: true, children: [
+      {text: 'Altiostar', icon: 'calendar_view_day', expanded: true, children: [
         {text: '4G', icon: '', expanded: true, children: [
           {text: 'On Air', icon: '', children: [
-            {text: 'RM1-2', icon: 'Bell', children: []},
+            {text: 'RM1-2', icon: 'calendar_view_day', children: []},
           ]},
           {text: 'Planned', icon: '', expanded: true, children: [
             {text: 'Indoor', icon: '', expanded: true, children: [
@@ -31,27 +31,27 @@ export class AppComponent  {
           ]},
         ]},
         {text: '5G', icon: '', children: [
-          {text: 'RM1-2', icon: 'Bell', children: []},
-          {text: 'RM1-2', icon: 'Bell', children: []},
+          {text: 'RM1-2', icon: 'calendar_view_day', children: []},
+          {text: 'RM1-2', icon: 'calendar_view_day', children: []},
         ]},
       ]},
-      {text: 'Airspan', icon: 'Bell', children: [
-        {text: 'RM1-2', icon: 'Bell', children: []},
-        {text: 'RM1-2', icon: 'Bell', children: []},
+      {text: 'Airspan', icon: 'calendar_view_day', children: [
+        {text: 'RM1-2', icon: 'calendar_view_day', children: []},
+        {text: 'RM1-2', icon: 'calendar_view_day', children: []},
       ]},
-      {text: 'Sercomm', icon: 'Bell', children: [
-        {text: 'RM1-2', icon: 'Bell', children: []},
-        {text: 'RM1-2', icon: 'Bell', children: []},
+      {text: 'Sercomm', icon: 'calendar_view_day', children: [
+        {text: 'RM1-2', icon: 'calendar_view_day', children: []},
+        {text: 'RM1-2', icon: 'calendar_view_day', children: []},
       ]},
     ]},
-    {text: 'Core', icon: 'Bell', expanded: true, children: [
-      {text: 'Nokia', icon: 'Bell', children: [
-        {text: 'RM1-2', icon: 'Bell', children: []},
-        {text: 'RM1-2', icon: 'Bell', children: []},
+    {text: 'Core', icon: 'calendar_view_day', expanded: true, children: [
+      {text: 'Nokia', icon: 'calendar_view_day', children: [
+        {text: 'RM1-2', icon: 'calendar_view_day', children: []},
+        {text: 'RM1-2', icon: 'calendar_view_day', children: []},
       ]},
-      {text: 'F5', icon: 'Bell', children: [
-        {text: 'RM1-2', icon: 'Bell', children: []},
-        {text: 'RM1-2', icon: 'Bell', children: []},
+      {text: 'F5', icon: 'calendar_view_day', children: [
+        {text: 'RM1-2', icon: 'calendar_view_day', children: []},
+        {text: 'RM1-2', icon: 'calendar_view_day', children: []},
       ]},
     ]},
   
