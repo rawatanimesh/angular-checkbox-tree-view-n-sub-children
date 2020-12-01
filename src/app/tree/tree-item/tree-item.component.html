@@ -4,10 +4,12 @@
         [class.tree-item-row-selected]="!(item.children && item.children.length) && item.selected"
         fxLayout="row" 
         fxLayoutAlign="flex-start center">
-        <button mat-button >
-          <mat-icon>keyboard_arrow_right</mat-icon>
+        <!-- <button mat-button > -->
+          <mat-icon
+          *ngIf="item.children && item.children.length"
+          >{{item.children && item.children.length && item.expanded ? 'arrow_down' : 'arrow_right'}}</mat-icon>
           {{item.text}}
-        </button>
+        <!-- </button> -->
        
   </div>
   <div 
