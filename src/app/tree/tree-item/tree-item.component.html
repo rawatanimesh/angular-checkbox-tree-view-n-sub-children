@@ -7,11 +7,14 @@
         <!-- <button mat-button > -->
           <mat-icon
           *ngIf="item.children && item.children.length && item.expanded"
-          >power_on</mat-icon>
+          >keyboard_arrow_down</mat-icon>
           <mat-icon
           *ngIf="!(item.children && item.children.length && item.expanded)"
-          >power_off</mat-icon>
+          >keyboard_arrow_right</mat-icon>
           {{item.text}}
+           <mat-icon
+          *ngIf="item.icon"
+          >{{item.icon}}</mat-icon>
         <!-- </button> -->
        
   </div>
