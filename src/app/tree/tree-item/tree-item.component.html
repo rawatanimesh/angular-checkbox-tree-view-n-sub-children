@@ -6,8 +6,11 @@
         fxLayoutAlign="flex-start center">
         <!-- <button mat-button > -->
           <mat-icon
-          *ngIf="item.children && item.children.length"
-          >{{item.children && item.children.length && item.expanded ? 'arrow_down' : 'arrow_right'}}</mat-icon>
+          *ngIf="item.children && item.children.length && item.expanded"
+          >power_on</mat-icon>
+          <mat-icon
+          *ngIf="!(item.children && item.children.length && item.expanded)"
+          >power_off</mat-icon>
           {{item.text}}
         <!-- </button> -->
        
