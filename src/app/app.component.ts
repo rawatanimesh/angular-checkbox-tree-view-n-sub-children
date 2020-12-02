@@ -9,7 +9,7 @@ export class AppComponent  {
 
   treeList = [
     {text: 'RAN', icon: 'calendar_view_day', expanded: true, children: [
-      {text: 'Altiostar', icon: 'calendar_view_day', expanded: true, children: [
+      {text: 'Altiostar', icon: 'blur_circular', expanded: true, children: [
         {text: '4G', icon: '', expanded: true, children: [
           {text: 'On Air', icon: '', children: [
             {text: 'RM1-2', icon: 'calendar_view_day', children: []},
